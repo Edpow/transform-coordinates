@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+}
+
+textarea {
+    height: 700px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    align: center;
+}
+
+h1 {
+    color: white;
+    justify: center;
+}
