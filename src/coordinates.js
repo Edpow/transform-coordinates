@@ -1,8 +1,9 @@
 import transformation  from 'transform-coordinates';
 
 export function ConvertCoordinates(line){
-    const transform  = transformation('EPSG:31981', 'EPSG:4326')
-    const result = transform.forward({x: parseFloat(line[0]), y: parseFloat(line[1])})
+    const transform  = transformation('EPSG:4326','EPSG:31981')
+    const result = transform.forward({x: parseFloat(line[1]), y: parseFloat(line[0])})
+    console.log(result)
     const {x, y} = result
-    return ([y, x].join(";"))
+    return ([x, y].join(","))
 }

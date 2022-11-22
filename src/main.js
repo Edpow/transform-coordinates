@@ -15,5 +15,5 @@ function ReadTextFromInput() {
 }
 
 function splitLine(line) {
-    return(line.split(';'));
+    return(line.split(','));
 }

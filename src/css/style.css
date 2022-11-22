@@ -1,21 +1,76 @@
+:root {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    box-sizing: border-box;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  
+  }
+
 body {
-    background-color: black;
+    display: grid;
+    height: 100vh;
+    padding: 10px;
+    align-items: center;
+    grid-template-areas:
+    "header header"
+    "main aside";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 3fr 1fr;
 }
+
+header {
+    grid-area: header;
+    display:flex;
+    justify-content: center;
+    hei
+}
+
+main {
+    height:100%;
+    grid-area: main;
+    display:flex;
+    gap: 12px;
+}
+
+aside {
+    grid-area: aside;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100%;
+    gap: 5px;
+    padding: 5px;
+  }
 
 textarea {
-    height: 700px;
-}
-
-div {
-    display: flex;
-    justify-content: center;
-}
-
-button {
-    align: center;
+    display:flex;
+    width: 90%;
+    height: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    box-sizing: border-box;
+    font-size:12px;
 }
 
 h1 {
     color: white;
     justify: center;
 }
+
+button {
+    width:96%;
+    height:50px;
+}
+  
