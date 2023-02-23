@@ -17,8 +17,14 @@
     </main>
     <aside>
         <button id="btConverter" onclick="">Converter</button>
-        <input id="fromMap" type="text">
-        <input id="toMap" type="text">
+        <input id="fromMap" type="text" list="basesData" value="EPSG:4326">
+        <input id="toMap" type="text" list="basesData" value="EPSG:31981">
+
+        <datalist id="basesData">
+            <option>EPSG:31981</option>
+            <option>EPSG:4326</option>
+        </datalist>
+
     </aside>
 </body>
 <script type="module" src="./src/main.js"></script>
